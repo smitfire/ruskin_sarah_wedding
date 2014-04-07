@@ -37,7 +37,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-  gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7', :require => 'bcrypt'
 
 # Use unicorn as the app server
 gem 'unicorn'
@@ -47,6 +47,6 @@ ruby "2.0.0"
 # gem 'capistrano', group: :development
 
 # Use debugger
-  gem 'debugger', group: [:development, :test]
+gem 'debugger', group: [:development, :test]
 
 gem 'rails_12factor', group: :production

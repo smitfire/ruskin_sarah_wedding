@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+require 'csv'
+
+CSV.foreach('db/MOCK_DATA.csv', :headers => true) do |row|
+	User.create(first: row['first_name'], last: row['last_name'], email: row['email'], password: row['first_name'], attendance: false)
+end
