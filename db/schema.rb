@@ -20,7 +20,8 @@ ActiveRecord::Schema.define(version: 20140407141009) do
     t.string   "first"
     t.string   "last"
     t.string   "email"
-    t.string   "password"
+    t.string   "password_digest",       null: false
+    t.string   "password_confirmation"
     t.boolean  "attendance"
     t.datetime "created_at"
     t.datetime "updated_at"
