@@ -10,11 +10,7 @@
  *
  *= require bootstrap
  *= require_self
- *= require fonts
- *= require font.css
- *= require font.css.scss
+ *= require font
  *= require_tree .
  */
-@import 'font.css.scss';
-@import 'font.css';
-@import 'font';
+@import '**/*';
