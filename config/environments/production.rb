@@ -3,13 +3,11 @@ RuskinSarahWedding::Application.configure do
 
   # Code is not reloaded between requests.
   config.cache_classes = true
-  config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
   # Eager load code on boot. This eager loads most of Rails and
   # your application in memory, allowing both thread web servers
   # and those relying on copy on write to perform better.
   # Rake tasks automatically ignore this option for performance.
   config.eager_load = true
-  config.assets.precompile << /\.(?:svg|eot|woff|ttf)$/
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
   config.action_controller.perform_caching = true
@@ -59,7 +57,7 @@ RuskinSarahWedding::Application.configure do
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-  config.assets.precompile += %w( font.css.scss )
+  # config.assets.precompile += %w( font.css.scss )
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
