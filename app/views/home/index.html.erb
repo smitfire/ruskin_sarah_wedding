@@ -24,16 +24,12 @@
 	<div class="col-lg-6">
 		<% if current_user %>
 		<% else %>
-			<p>
-				<a id="show_me" class="btn btn-info btn-block" href="#" role="button">
-					RSVP
-				</a>
-			</p>
-		<span class="rsvpying">
+		
 			<%= render 'users/sign_in_2' %>
-		</span>
+		
 		<% end %>	
 	</div>
+	
 	<div class="col-lg-6">
 			<%= render 'users/news_letter_sign_up' %>
 		

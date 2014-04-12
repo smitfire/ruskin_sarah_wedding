@@ -14,6 +14,11 @@ class SessionsController < ApplicationController
       session.clear
       
       redirect_to root_path
+    elsif params[:user].length == 2
+      @user = User.create(email: params[:user][:email], attendance: params[:user][:attendance])
+      session.clear
+      
+      redirect_to root_path  
     else
       @user = User.create(params[:user][:first], last: params[:user][:last], email: params[:user][:email], password: params[:user][:password], password_confirmation: params[:user][:password_confirmation], attendance: 'true')
     
