@@ -7609,6 +7609,58 @@ button.close {
 
  */
 
+@import 'font'
+@font-face {
+  font-family: 'open_sansbold';
+  src: url(/assets/OpenSans-Bold-webfont.eot);
+  src: url(/assets/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/OpenSans-Bold-webfont.woff) format("woff"), url(/assets/OpenSans-Bold-webfont.ttf) format("truetype"), url(/assets/OpenSans-Bold-webfont.svg#open_sansbold) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url(/assets/OpenSans-Regular-webfont.eot);
+  src: url(/assets/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/OpenSans-Regular-webfont.woff) format("woff"), url(/assets/OpenSans-Regular-webfont.ttf) format("truetype"), url(/assets/OpenSans-Regular-webfont.svg#open_sansregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url(/assets/BEBAS___-webfont.eot);
+  src: url(/assets/BEBAS___-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/BEBAS___-webfont.woff) format("woff"), url(/assets/BEBAS___-webfont.ttf) format("truetype"), url(/assets/BEBAS___-webfont.svg#bebasregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'greatvibesregular';
+  src: url(/assets/GreatVibes-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldbold';
+  src: url(/assets/Oswald-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldlight';
+  src: url(/assets/Oswald-Light.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldregular';
+  src: url(/assets/Oswald-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 5, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 #heart {
   position: relative;
@@ -7657,6 +7709,107 @@ button.close {
   -o-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
 }
+
+/* line 48, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+section#bio p {
+  font-family: 'open_sansregular';
+  font-size: 16px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #282828;
+  padding: 30px 30px;
+}
+
+/* line 58, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+body p {
+  font-family: 'open_sansregular';
+}
+
+/* line 62, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+.intro {
+  padding: 10px 0 0;
+}
+
+/* line 70, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: 'oswaldregular';
+}
+
+/* line 73, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+.clg {
+  font-family: 'greatvibesregular';
+}
+
+/* line 76, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+h2.clg {
+  font-size: 48px;
+}
+
+/* line 79, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+.intro h1 {
+  line-height: 79px;
+}
+
+/* line 82, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+h1.clg {
+  font-size: 78px;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url(/assets/OpenSans-Bold-webfont.eot);
+  src: url(/assets/OpenSans-Bold-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/OpenSans-Bold-webfont.woff) format("woff"), url(/assets/OpenSans-Bold-webfont.ttf) format("truetype"), url(/assets/OpenSans-Bold-webfont.svg#open_sansbold) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url(/assets/OpenSans-Regular-webfont.eot);
+  src: url(/assets/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/OpenSans-Regular-webfont.woff) format("woff"), url(/assets/OpenSans-Regular-webfont.ttf) format("truetype"), url(/assets/OpenSans-Regular-webfont.svg#open_sansregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'bebasregular';
+  src: url(/assets/BEBAS___-webfont.eot);
+  src: url(/assets/BEBAS___-webfont.eot?#iefix) format("embedded-opentype"), url(/assets/BEBAS___-webfont.woff) format("woff"), url(/assets/BEBAS___-webfont.ttf) format("truetype"), url(/assets/BEBAS___-webfont.svg#bebasregular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'greatvibesregular';
+  src: url(/assets/GreatVibes-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldbold';
+  src: url(/assets/Oswald-Bold.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldlight';
+  src: url(/assets/Oswald-Light.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'oswaldregular';
+  src: url(/assets/Oswald-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
 /* line 5, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 body {
   padding: 40px 0;
@@ -7695,7 +7848,7 @@ body ul, body li {
 
 /* line 87, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart {
-  min-height: 400px;
+  min-height: 450px;
   padding: 1em;
 }
 
@@ -7845,8 +7998,7 @@ body ul, body li {
 
 /* line 240, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--detail--textContainer {
-  background-color: transparent;
-  padding: 10px 0 0 0;
+  padding: 10px;
   margin: 0;
   font-style: italic;
 }
