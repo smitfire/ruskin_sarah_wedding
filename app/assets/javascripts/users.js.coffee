@@ -39,6 +39,16 @@ PieChart = (css_selector, color_array)->
 
   return
 
+
+
+
+
+
+
+
+
+
+
 ready = ->
   color_one = [ "rgba(152,171,197,1)",
     "rgba(138,137,166,1)",
