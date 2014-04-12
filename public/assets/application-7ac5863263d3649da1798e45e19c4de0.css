@@ -7608,8 +7608,6 @@ button.close {
 
 
  */
-
-@import 'font'
 @font-face {
   font-family: 'open_sansbold';
   src: url(/assets/OpenSans-Bold-webfont.eot);
