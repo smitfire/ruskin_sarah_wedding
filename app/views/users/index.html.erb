@@ -1,51 +1,41 @@
-<div class="jumbotron">
-	<div class="row">
-	
-	<div class=" col-lg-4 intro text-center">
-		<h1 class="text-center clg">Sarah <br> & <br> Ruskin's</h1>
-		<h1 class="text-center clg">
-			Wedding
-		</h1>
-		<br>
-		<h4>
-			January 8,
-		</h4>
-		<h1>
-			 2015
-		</h1>
-	</div>
 
-		<div class="col-lg-6 col-lg-offset-0">
-			<%= image_tag('unnamed.jpg', width:'670') %>
-		</div>
-	</div>
-	<hr>
-		
-
-	<p>
-		<a class="btn btn-info btn-block" href="#" role="button">
-			RSVP
-		</a>
-	</p>
-</div>
-
-<hr>
-
-<div class="row">
-	<%= render "users/bio" %>
-</div>
-
-<div class="row">
-	<%= render "users/chart" %>
-</div>
-
-<hr>
-
-<div class="row">
-	<div class="col-lg-6">
-	<%= render "users/slider" %>
-	</div>
-	<div class="col-lg-6">
-	<%= render "users/proposal" %>
-	</div>
-</div>
+<table class="table table-hover norm">
+	<thead>
+		<tr class=""> 
+			<td>First Name</td>
+			<td>Last Name</td>
+			<td>Email</td>
+			<td>Attendance, <%= @count %></td>
+		</tr>
+	</thead>
+	<tbody>
+		<% @users.each do |user| %>
+			<% if user.attendance == 'false' %>
+				<tr>
+			<% else %>
+				<tr class="success">
+			<% end %>
+			<td>
+				<h5>
+					<%= user.first.capitalize %>
+				</h5>
+			</td>
+			<td>
+				<h5>
+					<%= user.last.capitalize %>
+				</h5>
+			</td>
+			<td>
+				<h5>
+					<%= user.email %>
+				</h5>
+			</td>
+			<td>
+				<h4>
+					<%= user.attendance.capitalize %>
+				</h4>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

@@ -6,7 +6,7 @@ RuskinSarahWedding::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'users#index'
+  root 'home#index'
   resources :users
   resources :sessions
   # Example of regular route:

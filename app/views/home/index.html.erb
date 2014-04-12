@@ -1,12 +1,56 @@
 <div class="jumbotron">
-	<h1>Marketing stuff!</h1>
+	<div class="row">
 	
-	<p class="lead">
-		Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet.
-	</p>
+	<div class=" col-lg-4 intro text-center">
+		<h1 class="text-center clg">Sarah <br> & <br> Ruskin's</h1>
+		<h1 class="text-center clg">
+			Wedding
+		</h1>
+		<br>
+		<h4>
+			January 8,
+		</h4>
+		<h1>
+			 2015
+		</h1>
+	</div>
+
+		<div class="col-lg-6 col-lg-offset-0">
+			<%= image_tag('unnamed.jpg', width:'670') %>
+		</div>
+	</div>
+	<hr>
+		
+<% if current_user %>
+<% else %>
 	<p>
-		<a class="btn btn-lg btn-success" href="#" role="button">
-			Get started today
+		<a id="show_me" class="btn btn-info btn-block" href="#" role="button">
+			RSVP
 		</a>
 	</p>
+	<span class="rsvpying">
+		<%= render 'users/sign_in' %>
+	</span>
+<% end %>	
+</div>
+
+<hr>
+
+<div class="row">
+	<%= render "users/bio" %>
+</div>
+
+<div class="row">
+	<%= render "users/chart" %>
+</div>
+
+<hr>
+
+<div class="row">
+	<div class="col-lg-6">
+	<%= render "users/slider" %>
+	</div>
+	<div class="col-lg-6">
+	<%= render "users/proposal" %>
+	</div>
 </div>

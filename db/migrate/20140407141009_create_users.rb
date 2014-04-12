@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration
      	t.string :email 
      	t.string :password_digest, null: false
       t.string :password_confirmation
-     	t.boolean :attendance
+     	t.string :attendance
 
       t.timestamps
     end

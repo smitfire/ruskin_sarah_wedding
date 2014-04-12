@@ -42,16 +42,23 @@ PieChart = (css_selector, color_array)->
 
 showHeart = ->
   $('#heart').show(2000, 'linear')
-  console.log('test')
   return
 
+showRsvp = ->
+  $('#show_me').on 'click', (event) ->
+    event.preventDefault()
+    $('.rsvpying').show()
+    $(this).hide()
+    return
 
 
 
 
 
 ready = ->
+  showRsvp()
   $('#heart').hide()
+  $('.rsvpying').hide()
   color_one = [ "rgba(152,171,197,1)",
     "rgba(138,137,166,1)",
     "rgba(123,104,136,1)",
