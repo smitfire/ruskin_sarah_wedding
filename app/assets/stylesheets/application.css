@@ -12,4 +12,6 @@
  *= require_self
  *= require_tree .
  */
-@import 'font'
+@import 'font.css.scss';
+@import 'font.css';
+@import 'font';
