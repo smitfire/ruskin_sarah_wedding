@@ -50,6 +50,12 @@ showRsvp = ->
     $('.rsvpying').show()
     $(this).hide()
     return
+showNews = ->
+  $('#show_me2').on 'click', (event) ->
+    event.preventDefault()
+    $('.newsing').show()
+    $(this).hide()
+    return
 
 
 
@@ -57,8 +63,10 @@ showRsvp = ->
 
 ready = ->
   showRsvp()
+  showNews()
   $('#heart').hide()
   $('.rsvpying').hide()
+  $('.newsing').hide()
   color_one = [ "rgba(152,171,197,1)",
     "rgba(138,137,166,1)",
     "rgba(123,104,136,1)",
