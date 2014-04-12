@@ -30,3 +30,8 @@ development:
   encoding: unicode
   database: ruskin_sarah_development
   pool: 5
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: ruskin_sarah_development
+  pool: 5
