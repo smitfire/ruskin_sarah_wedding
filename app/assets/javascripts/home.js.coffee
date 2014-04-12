@@ -167,9 +167,6 @@
     drawDetailedInformation = (data, element) ->
       bBox = element.getBBox()
       infoWidth = width * 0.3
-      anchor = undefined
-      infoContainer = undefined
-      position = undefined
       if (bBox.x + bBox.width / 2) > 0
         infoContainer = detailedInfo.append("g").attr("width", infoWidth).attr("transform", "translate(" + (width - infoWidth) + "," + (bBox.height + bBox.y) + ")")
         anchor = "end"
@@ -185,7 +182,7 @@
           return
 
       infoContainer.append("line").attr("class", "pieChart--detail--divider").attr("x1", 0).attr("x2", 0).attr("y1", 0).attr("y2", 0).transition().duration(DURATION).attr "x2", infoWidth
-      infoContainer.data([data.description]).append("foreignObject").attr("width", infoWidth).attr("height", 100).append("xhtml:body").attr("class", "pieChart--detail--textContainer " + "pieChart--detail__" + position).html data.description
+      infoContainer.data([data.description]).append("foreignObject").attr("width", infoWidth).attr("height", 150).append("xhtml:body").attr("class", "pieChart--detail--textContainer " + "pieChart--detail__" + position).html data.description
       return
     containerEl = document.getElementById(elementId)
     width = containerEl.clientWidth
@@ -278,13 +275,13 @@
     pieChart: [
       {
         color: "red"
-        description: "Ipsem lorem text goes here. And foo goes bar goes baz. That's up!!!"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, doloremque dolores eaque quia labore sit facilis magni enim praesentium nihil eveniet quaerat similique est porro quisquam accusamus ut error consectetur..long para.sublime-snippet"
         title: "flowers"
         value: 0.62
       }
       {
         color: "blue"
-        description: "Another ipsem text goes here. And baz goes bar goes foo. Oh yeah, whazzz up?"
+        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, doloremque dolores eaque quia labore sit facilis magni enim praesentium nihil eveniet quaerat similique est porro quisquam accusamus ut error consectetur..long para.sublime-snippet"
         title: "trains"
         value: 0.38
       }

@@ -3,8 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 PieChart = (css_selector, color_array)->
-  width = 480
-  height = 250
+  width = 200
+  height = 200
   radius = Math.min(width, height) / 2
   color = d3.scale.ordinal().range([
     color_array[0]
@@ -40,9 +40,10 @@ PieChart = (css_selector, color_array)->
   return
 
 
-
-
-
+showHeart = ->
+  $('#heart').show(2000, 'linear')
+  console.log('test')
+  return
 
 
 
@@ -50,6 +51,7 @@ PieChart = (css_selector, color_array)->
 
 
 ready = ->
+  $('#heart').hide()
   color_one = [ "rgba(152,171,197,1)",
     "rgba(138,137,166,1)",
     "rgba(123,104,136,1)",
@@ -66,6 +68,7 @@ ready = ->
     "rgba(255,140,0,1)"]    
   pieChart = new PieChart('.chart_one', color_one)
   pieChart2 = new PieChart('.chart_two', color_two)
+  setTimeout(showHeart, 2000)
   return
 
 $(document).ready ready

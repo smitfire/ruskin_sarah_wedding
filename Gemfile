@@ -43,7 +43,7 @@ gem 'bcrypt-ruby', '~> 3.1.2'
 # Use unicorn as the app server
 gem 'unicorn'
 ruby "2.0.0"
-
+gem 'jquery-ui-rails'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 

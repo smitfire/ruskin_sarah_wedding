@@ -61,7 +61,7 @@ $f-weightPieChartPercentage : 100;
 $f-spacing : 1px;
 
 // dimensions
-$d-chartHeight : 400px;
+$d-chartHeight : 450px;
 
 // set base styles
 * {
@@ -238,8 +238,8 @@ body {
 }
 
 .pieChart--detail--textContainer {
-  background-color: transparent;
-  padding: 10px 0 0 0;
+  // background-color: transparent;
+  padding: 10px;
   margin: 0;
   
   // color: $c-baseColorBright;
