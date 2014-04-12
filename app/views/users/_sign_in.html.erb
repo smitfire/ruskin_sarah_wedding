@@ -1,0 +1,15 @@
+    
+<%= form_for :user, html:{class: "form-signin"}, url: sessions_path do |f| %>
+	<h2 class="form-signin-heading">
+		Login
+	</h2>
+	<p>
+		<%= f.text_field :email, :placeholder => "Email", class: "form-control" %>
+	</p>
+	<p>
+		<%= f.password_field :password, :placeholder => "Password", class: "form-control" %>
+	</p>
+	<p>
+		<%= f.submit "Login", class: "btn btn-lg btn-primary" %>
+	</p>
+<% end %>

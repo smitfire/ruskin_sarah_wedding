@@ -5,15 +5,24 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  
 </head>
 <body>
 	<div class="container">
-        <header>
-          <nav>
-            <ul class="nav nav-pills pull-right">
-             </ul>
-           </nav>
-          </header>
+    <header class="masthead">
+      <h6 class="text-muted">Ruskin and Sarah's Fun in the Sun Day. Also, a wedding...</h6>
+      <hr>
+      <ul class="nav nav-justified">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Downloads</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </header>
+    <hr>
+
 		<%= yield %>
 	
 	
