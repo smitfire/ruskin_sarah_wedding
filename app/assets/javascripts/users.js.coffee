@@ -3,8 +3,8 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 PieChart = (css_selector, color_array)->
-  width = 580
-  height = 300
+  width = 480
+  height = 250
   radius = Math.min(width, height) / 2
   color = d3.scale.ordinal().range([
     color_array[0]
