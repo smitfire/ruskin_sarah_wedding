@@ -6,7 +6,7 @@ body{
 	padding:40px 0;
 }
 .arc path {
-  stroke: #fff;
+  // stroke: #fff;
 }
 .chart_two,
 .chart_one{
@@ -20,20 +20,20 @@ body{
 
 // color stuff
 $c-bg             : #fff;
-$c-baseColor      : #333;
-$c-baseColorBright: #666;
+$c-baseColor      : rgba(215,57,45,1);
+$c-baseColorBright: rgba(102,102,102,1);
 
-$c-border           : #eee;
+$c-border           : rgba(215,57,45,1);
 $c-borderDark       : $c-baseColor;
-$c-borderBright     : adjust-lightness( $c-baseColor, 30 );
-$c-borderBrightPlus : adjust-lightness( $c-baseColor, 50 );
+$c-borderBright     : adjust-lightness( $c-baseColor, 10 );
+$c-borderBrightPlus : adjust-lightness( $c-baseColor, 10 );
 $c-shadow           : $c-baseColor;
-$c-dashedLine       : adjust-lightness( $c-baseColor, 40 );
+$c-dashedLine       : adjust-lightness( $c-baseColor, 10 );
 
 $c-borderDevider : $c-borderBright;
 
-$c-red  : #d79d91;
-$c-blue : #6bb7c7;
+$c-red  : rgba(215,57,45,1);
+$c-blue : rgba(107,183,199,1);
 
 // font-stuff
 $f-family : sans-serif;
@@ -86,7 +86,7 @@ body {
 
 .chart {
   min-height: $d-chartHeight;
-  border-bottom: 1px solid $c-border;
+  
 
   padding: 1em;
 }
@@ -214,7 +214,7 @@ body {
 }
 
 .pieChart--center--innerCircle {
-  fill: #fff;
+  fill: rgba(215,57,45,1);
 }
 
 .pieChart--center--text {
@@ -226,8 +226,7 @@ body {
 }
 
 .pieChart--detail--divider {
-  stroke: $c-borderDevider;
-  stroke-width: 1;
+  
 }
 
 .pieChart--detail--percentage {
@@ -235,7 +234,7 @@ body {
   font-weight: $f-weightPieChartPercentage;
   
   fill: $c-baseColor;
-  stroke-width: 1px;
+  // stroke-width: 1px;
 }
 
 .pieChart--detail--textContainer {
@@ -243,7 +242,7 @@ body {
   padding: 10px 0 0 0;
   margin: 0;
   
-  color: $c-baseColorBright;
+  // color: $c-baseColorBright;
   font-style: italic;
 }
 

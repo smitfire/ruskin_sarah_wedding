@@ -386,7 +386,7 @@
                       .transition()
                       .duration( DURATION )
                       .delay( DELAY )
-                      .attr( 'r', radius - 50 );
+                      .attr( 'r', radius - 60 );
       
       centerContainer.append( 'circle' )
                       .attr( 'id', 'pieChart-clippy' )
