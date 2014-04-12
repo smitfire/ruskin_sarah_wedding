@@ -6,7 +6,11 @@ class CreateUsers < ActiveRecord::Migration
      	t.string :email 
      	t.string :password_digest, null: false
       t.string :password_confirmation
-     	t.string :attendance
+      t.string :attendance
+     	t.string :newsletter
+      t.string :meal
+      t.string :plus_one
+      t.text :reply
 
       t.timestamps
     end

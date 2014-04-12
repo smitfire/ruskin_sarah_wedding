@@ -23,6 +23,10 @@ ActiveRecord::Schema.define(version: 20140407141009) do
     t.string   "password_digest",       null: false
     t.string   "password_confirmation"
     t.string   "attendance"
+    t.string   "newsletter"
+    t.string   "meal"
+    t.string   "plus_one"
+    t.text     "reply"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

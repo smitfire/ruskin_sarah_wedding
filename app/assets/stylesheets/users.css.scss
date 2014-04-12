@@ -5,7 +5,21 @@
 body{
 	padding:40px 0;
 }
-
+form.form-signing label.control-label{
+	text-align:left;
+}
+form.form-signin input[type='checkbox']{
+	width:50px;
+	padding:0; margin:0;
+	webkit-box-shadow: none !important;
+	box-shadow: none !important;
+}
+.pt{
+	padding:12px 0 0;
+}
+textarea.form-control{
+	height:150px;
+}
 table.norm p,
 table.norm h6,
 table.norm h5,
@@ -35,9 +49,9 @@ table.norm thead{
 .signinform input{
 	display:inline;
 }
-/**
- * Variable power
- */
+
+ // * Variable power
+
 
 // color stuff
 $c-bg             : #fff;
