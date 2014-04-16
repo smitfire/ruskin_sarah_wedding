@@ -34,7 +34,17 @@
 	</div>
 
 	<div class="col-lg-6">
-		<% if @rsvp_success %>
+		<% if @rsvp_success && @newsletter_success %>
+			<p class="text-center">
+				<%= @rsvp_success %>
+			</p>
+	</div>
+	<div class="col-lg-6">
+		<p class="text-center">
+			<%= @newsletter_success %>
+		</p>
+	</div>
+		<% elsif @rsvp_success %>
 			<p class="text-center">
 				<%= @rsvp_success %>
 			</p>
