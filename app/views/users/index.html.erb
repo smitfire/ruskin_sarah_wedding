@@ -5,7 +5,10 @@
 			<td>First Name</td>
 			<td>Last Name</td>
 			<td>Email</td>
-			<td>Attendance, <%= @count %></td>
+			<td>Attendance</td>
+			<td>Newsletter</td>
+			<td>Veg Meals</td>
+			<td>Total Attending,  <%= @count %></td>
 		</tr>
 	</thead>
 	<tbody>
@@ -17,12 +20,16 @@
 			<% end %>
 			<td>
 				<h5>
+					<%if user.first %>
 					<%= user.first.capitalize %>
+					<%end%>
 				</h5>
 			</td>
 			<td>
 				<h5>
+					<%if user.last %>
 					<%= user.last.capitalize %>
+					<% end %>
 				</h5>
 			</td>
 			<td>
@@ -32,7 +39,30 @@
 			</td>
 			<td>
 				<h4>
+					<%if user.attendance %>
 					<%= user.attendance.capitalize %>
+					<% end %>
+				</h4>
+			</td>
+			<td>
+				<h4>
+					<%if user.newsletter %>
+					<%= user.newsletter.capitalize %>
+					<% end %>
+				</h4>
+			</td>
+			<td>
+				<h4>
+					<%if user.meal %>
+					<%= user.meal %>
+					<% end %>
+				</h4>
+			</td>
+			<td>
+				<h4>
+					<%if user.plus_one %>
+					<%= user.plus_one %>
+					<% end %>
 				</h4>
 			</td>
 		</tr>

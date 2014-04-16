@@ -6,9 +6,10 @@ class UsersController < ApplicationController
 	end
 	
 	def index
-		if User.find(session[:user_id]).first == 'Admin'
+		if session[:user_id] && User.find(session[:user_id]).first == 'Admin'
 			@users = User.all
 			@count = 0
+			@current_user = session[:user_id]
 			@users.each do |user|
 				if user.plus_one 
 					@count += user.plus_one
