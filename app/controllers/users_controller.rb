@@ -6,7 +6,7 @@ class UsersController < ApplicationController
 	end
 	
 	def index
-		if current_user.first == 'Admin'
+		if User.find(session[:user_id]).first == 'Admin'
 			@users = User.all
 			@count = 0
 			@users.each do |user|
