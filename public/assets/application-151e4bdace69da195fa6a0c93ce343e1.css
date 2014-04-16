@@ -7721,7 +7721,17 @@ button.close {
   display: inline;
 }
 
-/* line 15, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 16, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+p.intro-text {
+  font-family: 'open_sansregular';
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 24px;
+  color: #282828;
+  padding: 30px 30px;
+}
+
+/* line 25, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 #heart:before,
 #heart:after {
   position: absolute;
@@ -7745,7 +7755,7 @@ button.close {
   transform-origin: 0 100%;
 }
 
-/* line 36, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 46, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 #heart:after {
   left: 0;
   -webkit-transform: rotate(45deg);
@@ -7760,7 +7770,18 @@ button.close {
   transform-origin: 100% 100%;
 }
 
-/* line 49, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 60, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+section#bio h2 {
+  padding: 10px;
+}
+
+/* line 65, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+.bg-me {
+  background: rgba(238, 238, 238, 0.7) !important;
+  border-radius: 3px;
+}
+
+/* line 69, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 section#bio p {
   font-family: 'open_sansregular';
   font-size: 16px;
@@ -7770,17 +7791,29 @@ section#bio p {
   padding: 30px 30px;
 }
 
-/* line 59, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 78, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+.center-block {
+  outline: red 2px solid;
+}
+
+/* line 81, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+p.us {
+  position: relative;
+  bottom: 200px;
+  color: white;
+}
+
+/* line 84, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 body p {
   font-family: 'open_sansregular';
 }
 
-/* line 63, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 88, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 .intro {
   padding: 10px 0 0;
 }
 
-/* line 71, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 96, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 h1,
 h2,
 h3,
@@ -7790,31 +7823,95 @@ h6 {
   font-family: 'oswaldregular';
 }
 
-/* line 74, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 99, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 .clg {
   font-family: 'greatvibesregular';
 }
 
-/* line 77, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 102, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 h2.clg {
   font-size: 48px;
 }
 
-/* line 80, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 105, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 .intro h1 {
   line-height: 79px;
 }
 
-/* line 83, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
+/* line 108, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/home.css.scss */
 h1.clg {
   font-size: 78px;
 }
 /* line 5, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 body {
-  padding: 40px 0;
+  padding: 0px 0;
+}
+
+/* line 8, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+header {
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 15px;
+  background: white;
+}
+
+/* line 13, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+form.form-signing label.control-label {
+  text-align: left;
 }
 
 /* line 16, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+form.form-signin input[type='checkbox'] {
+  width: 50px;
+  padding: 0;
+  margin: 0;
+  webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+/* line 22, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+.pt {
+  padding: 12px 0 0;
+}
+
+/* line 25, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+textarea.form-control {
+  height: 150px;
+}
+
+/* line 28, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+.jumbotron {
+  background: rgba(238, 238, 238, 0.7) !important;
+}
+
+/* line 31, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+.beachbg {
+  background-image: url(/assets/bgsr.jpeg);
+  height: 768px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  opacity: 0.3;
+}
+
+/* line 40, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+img.bgbc {
+  opacity: 0.5;
+  position: absolute;
+  top: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 46, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+body {
+  background: url(/assets/bgsr.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 60, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 table.norm p,
 table.norm h6,
 table.norm h5,
@@ -7825,71 +7922,68 @@ table.norm h1 {
   font-family: 'open_sansregular';
 }
 
-/* line 19, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 63, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 table.norm tr {
   height: 20px;
 }
 
-/* line 22, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 66, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 table.norm thead {
   font-family: 'oswaldregular';
   font-size: 22px;
 }
 
-/* line 31, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 75, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart_two,
 .chart_one {
   opacity: 0.9;
 }
 
-/* line 35, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 79, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .signinform input {
   display: inline;
 }
 
-/**
- * Variable power
- */
-/* line 88, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 132, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 93, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 137, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 body {
   font-size: 14px;
   font-family: sans-serif;
   font-weight: 100;
 }
-/* line 98, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 142, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 body ul {
   list-style: none;
 }
-/* line 102, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 146, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 body ul, body li {
   margin: 0;
   padding: 0;
 }
 
-/* line 108, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 152, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart {
   min-height: 450px;
   padding: 1em;
 }
 
-/* line 115, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 159, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart--headline, .chart--subHeadline {
   text-align: center;
 }
 
-/* line 119, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 163, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart--headline {
   position: relative;
   font-weight: 100;
   font-size: 28px;
 }
-/* line 125, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 169, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart--headline:before {
   position: absolute;
   content: '';
@@ -7899,14 +7993,14 @@ body ul, body li {
   margin: 0 0 0 -12.5%;
 }
 
-/* line 139, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 183, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .chart--subHeadline {
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
 }
 
-/* line 145, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 189, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .charts--container {
   background-color: white;
   width: 100%;
@@ -7915,7 +8009,7 @@ body ul, body li {
   margin: 5em auto;
 }
 
-/* line 153, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 197, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .charts--headline {
   text-align: center;
   color: #444;
@@ -7923,19 +8017,19 @@ body ul, body li {
   padding: 1em;
 }
 
-/* line 160, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 204, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--area {
   fill: url(#lineChart--gradientBackgroundArea);
 }
 
-/* line 164, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 208, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--areaLine {
   fill: none;
   stroke: #6bb7c7;
   stroke-width: 3;
 }
 
-/* line 170, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 214, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--bubble--label {
   fill: none;
   stroke: #6bb7c7;
@@ -7944,7 +8038,7 @@ body ul, body li {
   font-weight: 100;
 }
 
-/* line 179, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 223, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--bubble--value {
   fill: #fff;
   stroke: #fff;
@@ -7952,47 +8046,47 @@ body ul, body li {
   font-weight: 100;
 }
 
-/* line 186, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 230, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--circle {
   fill: #6bb7c7;
   stroke: #fff;
   stroke-width: 3;
 }
 
-/* line 192, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 236, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--circle__highlighted {
   fill: #fff;
   stroke: adjust-lightness(#6bb7c7, -15);
 }
 
-/* line 197, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 241, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--gradientBackgroundArea--top {
   stop-color: #6bb7c7;
   stop-opacity: 0.1;
 }
 
-/* line 202, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 246, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--gradientBackgroundArea--bottom {
   stop-color: #6bb7c7;
   stop-opacity: 0.6;
 }
 
-/* line 207, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 251, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--svg {
   border: 1px solid #d7392d;
 }
 
-/* line 213, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 257, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--xAxisTicks .domain, .lineChart--xAxis .domain, .lineChart--yAxisTicks .domain {
   display: none;
 }
 
-/* line 220, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 264, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--xAxis .tick line {
   display: none;
 }
 
-/* line 228, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 272, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .lineChart--xAxisTicks .tick line, .lineChart--yAxisTicks .tick line {
   fill: none;
   stroke: adjust-lightness(#d7392d, 10);
@@ -8000,51 +8094,51 @@ body ul, body li {
   stroke-dasharray: 2,2;
 }
 
-/* line 237, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 281, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--center--innerCircle {
   fill: #d7392d;
 }
 
-/* line 241, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 285, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--center--text {
   font-size: 28px;
 }
 
-/* line 245, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 289, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--center--outerCircle {
   fill: rgba(255, 255, 255, 0.75);
 }
 
-/* line 253, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 297, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--detail--percentage {
   font-size: 42px;
   font-weight: 100;
   fill: #d7392d;
 }
 
-/* line 261, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 305, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--detail--textContainer {
   padding: 10px;
   margin: 0;
   font-style: italic;
 }
 
-/* line 270, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 314, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--detail__left {
   text-align: left;
 }
 
-/* line 274, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 318, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart--detail__right {
   text-align: right;
 }
 
-/* line 278, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 322, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart__blue {
   fill: #6bb7c7;
 }
 
-/* line 282, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 326, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .pieChart__red {
   fill: #d7392d;
 }
@@ -8052,7 +8146,7 @@ body ul, body li {
 /**
  * Helper classes
  */
-/* line 290, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
+/* line 334, /Users/Nick-Home/Documents/rails_apps/ruskin_sarah_wedding/app/assets/stylesheets/users.css.scss */
 .hidden {
   display: none;
 }
