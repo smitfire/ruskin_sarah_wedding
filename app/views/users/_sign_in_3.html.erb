@@ -1,0 +1,76 @@
+    
+<%= form_for :user, html:{class: "form-signin form-horizontal"}, url: sessions_path do |f| %>
+	
+	<div class="form-group">
+		<%= f.label :first, class: 'control-label col-sm-2' %>
+		<div class="col-sm-10">
+			<p>
+				<%= f.text_field :first, :placeholder => "First Name", class: "form-control" %>
+			</p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :last, class: 'control-label col-sm-2' %>
+		<div class="col-sm-10">			
+			<p>
+				<%= f.text_field :last, :placeholder => "Last Name", class: "form-control" %>
+			</p>
+		</div>
+	</div>
+	
+	<div class="form-group">
+		<%= f.label :email, class: 'control-label col-sm-2' %>
+		<div class="col-sm-10">
+			<p>
+				<%= f.text_field :email, :placeholder => "Email", class: "form-control" %>
+			</p>
+		</div>
+	</div>		
+
+	<div class="form-group">
+		<%= f.label :reply, "Comment" ,class: 'control-label col-sm-2'%>
+		<div class="col-sm-10">		
+		
+				<%= f.text_area :reply, class: "form-control" %>
+			
+		</div>
+	</div>
+	
+	<div class="form-group">
+		
+		<%= f.label :attendance,  "Attending?", class: 'control-label col-sm-2' %>
+					
+		<div class="col-sm-3">
+			<p>
+				<%= f.select :attendance, ['Yes', 'No'], :include_blank => true, class: 'form-control' %>
+			</p>
+		</div>
+			
+		<%= f.label :plus_one, "Total Attending", class: 'control-label col-sm-5' %>
+		<div class="col-sm-2">
+			<p>
+				<%= f.number_field :plus_one, class: 'form-control' %>
+			</p>
+		</div>
+	</div>
+
+	<div class="form-group">
+		<%= f.label :meal, "Total Vegetarian Meals", class: 'control-label col-sm-6 col-sm-offset-4' %>
+		<div class="col-sm-2">
+			<p>
+				<%= f.number_field :meal, class: 'form-control' %>
+			</p>
+		</div>	
+	</div>
+
+	<div class="form-group">
+		<div class="col-sm-12">
+			<p>
+				<%= f.submit "RSVP", class: "btn btn-block btn-primary rsvp-button" %>
+			</p>
+		</div>
+	</div>
+
+	<div class="clearfix"></div>
+<% end %>

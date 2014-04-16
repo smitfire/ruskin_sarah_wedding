@@ -8,7 +8,14 @@ class UsersController < ApplicationController
 	def index
 		if current_user.first == 'Admin'
 			@users = User.all
-			@count = User.where(attendance: 'true').count
+			@count = 0
+			@users.each do |user|
+				if user.plus_one 
+					@count += user.plus_one
+				end
+				@count	
+			end
+
 		else
 			redirect_to root_url
 		end	

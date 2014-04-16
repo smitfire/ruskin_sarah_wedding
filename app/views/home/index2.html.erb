@@ -1,7 +1,6 @@
-<%= image_tag('bgsr.jpeg', width:'1140', class: 'bgbc') %>
-<div class="jumbotron">
-	
+<div class="jumbotron beachbg">
 	<div class="row">
+	
 		<div class=" col-lg-4 intro text-center">
 			<h1 class="text-center clg">Sarah <br> & <br> Ruskin's</h1>
 			<h1 class="text-center clg">
@@ -21,7 +20,6 @@
 		</div>
 		<div class="clearfix"></div>
 		<hr>
-		<hr>
 		<div class="col-lg-12">
 			<p class="intro-text">
 				Thanks for visiting our site!  We are super excited about getting married in Tobago, and will feel very lucky if you can join us.  There will be page updates with more wedding details in the next few months.  
@@ -32,22 +30,35 @@
 		</div>
 		<hr>
 	</div>
+	<hr>
 
 	<div class="col-lg-6">
-		<p>
-			<a id="show_me" class="btn btn-info btn-block" href="#" role="button">
-				RSVP
-			</a>
-		</p>
-		<span class="rsvpying">
-			<%= render 'users/sign_in_3' %>
-		</span>
+		<% if @rsvp_success %>
+			<p class="text-center">
+				<%= @rsvp_success %>
+			</p>
+	</div>
+	<div class="col-lg-6">
+		<%= render 'users/news_letter_sign_up' %>
 		
+	</div>
+		<%elsif @newsletter_success%>
+			<p>
+				<a id="show_me" class="btn btn-info btn-block" href="#" role="button">
+					RSVP
+				</a>
+			</p>
+			<span class="rsvpying">
+				<%= render 'users/sign_in_3' %>
+			</span>
 	</div>
 	
 	<div class="col-lg-6">
-		<%= render 'users/news_letter_sign_up' %>
+		<p class="text-center">
+			<%= @newsletter_success %>
+		</p>
 	</div>
+	<%end%>
 
 	<div class="clearfix"></div>
 </div>

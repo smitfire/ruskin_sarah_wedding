@@ -62,11 +62,12 @@ showNews = ->
 
 
 ready = ->
-  showRsvp()
-  showNews()
-  $('#heart').hide()
   $('.rsvpying').hide()
-  $('.newsing').hide()
+  # $('.rsvp-success').hide()
+  showRsvp()
+  # showNews()
+  # $('#heart').hide()
+  # $('.newsing').hide()
   color_one = [ "rgba(152,171,197,1)",
     "rgba(138,137,166,1)",
     "rgba(123,104,136,1)",

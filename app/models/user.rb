@@ -6,6 +6,6 @@ class User < ActiveRecord::Base
     validates_presence_of :email
 
     #bcrypt stuff
-    has_secure_password
+    # has_secure_password
 
 end

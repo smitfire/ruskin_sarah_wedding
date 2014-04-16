@@ -10,21 +10,11 @@
 <body>
 	<div class="container">
     <header class="masthead">
-      <hr>
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#">RSVP</a></li>
         <li><a href="#">Proposal</a></li>
         <li><a href="#">Where</a></li>
-      </ul>
-      <ul class="pull-right">
-        <li>
-        <% if current_user %>
-          <%= link_to "Log out", session_path(current_user.id), method: :delete, class: 'btn btn-default' %>   
-        <% else %>  
-          <%= render 'users/admin' %>
-        <% end %>
-        </li>
       </ul>
       <div class="clearfix"></div>
     </header>
@@ -32,10 +22,21 @@
 
 		<%= yield %>
 	
-	
-		<div class="row">
-			
-		</div>
+	 <hr>
+   <br>
+		<footer>
+     <ul class="pull-right">
+        <li>
+        <% if current_user %>
+          <%= link_to "Log out", session_path(current_user.id), method: :delete, class: 'btn btn-default' %>   
+        <% else %>  
+          <%= render 'users/admin' %>
+        <% end %>
+        </li>
+      </ul>  
+    </footer>
+    <br>
+    <hr>
 	</div>
 	</body>
 </html>
