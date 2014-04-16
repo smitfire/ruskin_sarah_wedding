@@ -56,6 +56,16 @@ p.intro-text{
          -o-transform-origin: 100% 100%;
             transform-origin :100% 100%;
 }
+
+section#bio h2{
+    // color:rgba(230,230,230,1);
+    padding: 10px;
+
+}
+.bg-me{
+    background:rgba(238,238,238,0.7)!important;
+    border-radius:3px;
+}
 section#bio p{
 	font-family: 'open_sansregular';
 	font-size:16px;
