@@ -9,6 +9,7 @@
 			<td>Newsletter</td>
 			<td>Veg Meals</td>
 			<td>Total Attending,  <%= @count %></td>
+			<td>Comments</td>
 		</tr>
 	</thead>
 	<tbody>
@@ -64,6 +65,13 @@
 					<%= user.plus_one %>
 					<% end %>
 				</h4>
+			</td>
+			<td>
+				<p>
+					<%if user.reply %>
+						<%= user.reply %>
+					<% end %>
+				</p>
 			</td>
 		</tr>
 		<% end %>

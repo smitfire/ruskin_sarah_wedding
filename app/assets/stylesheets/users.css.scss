@@ -82,7 +82,10 @@ table.norm h1
 	font-family: 'open_sansregular';
 }
 table.norm tr{
-	height: 20px;
+  padding:10px 2px;
+	// height: 20px;
+}
+table.norm td {
 }
 table.norm thead{
 	font-family: 'oswaldregular';
