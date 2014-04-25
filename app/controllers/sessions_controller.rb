@@ -31,7 +31,7 @@ class SessionsController < ApplicationController
 
   private
     def user_params
-      params.require(:user).permit(:email, :attendance, :first, :last, :newsletter, :plus_one, :meal)
+      params.require(:user).permit(:email, :attendance, :first, :last, :newsletter, :plus_one, :meal, :reply)
     end
     def user_params_2
       params.require(:user_news).permit(:email, :newsletter)
