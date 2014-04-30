@@ -14,61 +14,63 @@
 	</thead>
 	<tbody>
 		<% @users.each do |user| %>
-			<% if user.attendance == 'No' %>
+			<% if user.attendance == 'No'%>
 				<tr>
 			<% else %>
 				<tr class="success">
 			<% end %>
 			<td>
 				<h5>
-					<%if user.first %>
+					<%if user.first && user.first != 'Admin' %>
 					<%= user.first.capitalize %>
 					<%end%>
 				</h5>
 			</td>
 			<td>
 				<h5>
-					<%if user.last %>
+					<%if user.last && user.first != 'Admin' %>
 					<%= user.last.capitalize %>
 					<% end %>
 				</h5>
 			</td>
 			<td>
 				<h5>
+					<% if user.email && user.first != 'Admin'%>
 					<%= user.email %>
+					<%end%>
 				</h5>
 			</td>
 			<td>
 				<h4>
-					<%if user.attendance %>
+					<%if user.attendance && user.first != 'Admin' %>
 					<%= user.attendance.capitalize %>
 					<% end %>
 				</h4>
 			</td>
 			<td>
 				<h4>
-					<%if user.newsletter %>
+					<%if user.newsletter && user.first != 'Admin' %>
 					<%= user.newsletter.capitalize %>
 					<% end %>
 				</h4>
 			</td>
 			<td>
 				<h4>
-					<%if user.meal %>
+					<%if user.meal  && user.first != 'Admin' %>
 					<%= user.meal %>
 					<% end %>
 				</h4>
 			</td>
 			<td>
 				<h4>
-					<%if user.plus_one %>
+					<%if user.plus_one && user.first != 'Admin' %>
 					<%= user.plus_one %>
 					<% end %>
 				</h4>
 			</td>
 			<td>
 				<p>
-					<%if user.reply %>
+					<%if user.reply && user.first != 'Admin' %>
 						<%= user.reply %>
 					<% end %>
 				</p>
